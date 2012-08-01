@@ -134,6 +134,7 @@ module Typhoeus
         end
       else
         @multi.add(get_easy_object(request))
+        queue_next
       end
     end
 
